@@ -1,6 +1,5 @@
 package chap1;
 
-import static org.junit.Assert.*;
 
 public class Exo1 {
 
