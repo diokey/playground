@@ -19,7 +19,26 @@ void swap() {
   printf("a = %d , b = %d \n",a, b);
 }
 
+/*
+ * This is another method for Implementing inplace swap using bit manipulation
+ */
+void bit_swap() {
+  int a = 5;
+  int b = 7;
+
+  printf("Before ");
+  printf("a = %d , b = %d \n",a, b);
+  
+  a = a^b;
+  b = a^b;
+  a = a^b;
+
+  printf("After ");
+  printf("a = %d , b = %d \n",a, b);
+}
+
 int main() {
 
-  swap ();
+  swap();
+  bit_swap();
 }
