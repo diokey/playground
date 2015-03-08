@@ -31,6 +31,11 @@ public class Exo3 {
 		return false;
 	}
 	
+	/*
+	 * This algorithm is based on the observation that a permutation of a word
+	 * is essentially made of the same characters.
+	 * So if we sort those characters, we would end up with the same word.
+	 */
 	public static String sort(String word) {
 		char[] wordArray = word.toCharArray();
 		
